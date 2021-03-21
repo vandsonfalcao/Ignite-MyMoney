@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { Dashboard } from "./componets/Dashboard";
 import { Header } from "./componets/Header";
-import { NewTransactionModal } from "./componets/NewTransactions";
+import { NewTransactionModal } from "./componets/NewTransactionsModal";
 import { GlobalStyle } from "./styles/global";
+import { TransactionsProvider } from "./hooks/useTrasactions";
 
 export function App() {
   const [isNewTransactionModalOpen, setIsNewTransactionModalOpen] = useState(
@@ -16,7 +17,7 @@ export function App() {
     setIsNewTransactionModalOpen(false);
   }
   return (
-    <>
+    <TransactionsProvider>
       <Header onOpenNewTransitionModal={handleOpenNewTransactionModal} />
       <Dashboard />
       <NewTransactionModal
@@ -24,6 +25,6 @@ export function App() {
         onRequestClose={handleCloseNewTransactionModal}
       />
       <GlobalStyle />
-    </>
+    </TransactionsProvider>
   );
 }
