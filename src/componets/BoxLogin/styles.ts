@@ -43,6 +43,6 @@ export const ContainerSignIn = styled.main`
         }
     }
     button:hover {
-        border-bottom: 1px solid;
+        border-bottom: 1px solid #daa520;
     }
 `

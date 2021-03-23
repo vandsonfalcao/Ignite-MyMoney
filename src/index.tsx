@@ -51,8 +51,8 @@ ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Switch>
-        <Route path="/" exact={true} component={App} />
-        <Route path="/signin" component={SignIn} />
+        <Route path="/" exact={true} component={SignIn} />
+        <Route path="/in/signin/" component={App} />
       </Switch>
     </BrowserRouter>
   </React.StrictMode>,

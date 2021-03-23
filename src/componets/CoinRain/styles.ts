@@ -17,7 +17,6 @@ export const ContainerCoin = styled.section`
         background: url(${coinImg});
         background-repeat: no-repeat;
         background-size: cover;
-        background-color: red;
         border-radius: 100%;
 
         animation: coin-falling 4s ease-in infinite;

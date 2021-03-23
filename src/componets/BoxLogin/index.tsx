@@ -4,9 +4,8 @@ import githubImg from "../../assets/github.svg";
 
 export function BoxLogin() {
   function handleAutentication() {
-    fetch("https://github.com/login/oauth/authorize")
-      .then((res) => res.json())
-      .then((data) => console.log(data));
+    window.location.href =
+      "https://github.com/login/oauth/authorize?client_id=f11361154102bf62e310";
   }
   return (
     <Container>
