@@ -1,7 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { createServer, Model } from "miragejs";
 import { App } from "./App";
+import { SignIn } from "./SignIn";
 
 createServer({
   models: {
@@ -47,7 +49,12 @@ createServer({
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Switch>
+        <Route path="/" exact={true} component={App} />
+        <Route path="/signin" component={SignIn} />
+      </Switch>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")
 );
