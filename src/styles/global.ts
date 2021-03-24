@@ -28,6 +28,9 @@ export const GlobalStyle = createGlobalStyle`
             font-size: 87.5%;
             .container-page-login {
                 flex-direction: column;
+                h1 {
+                    font-size: 3rem;
+                }
             }
         }
     }

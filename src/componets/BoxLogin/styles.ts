@@ -36,17 +36,19 @@ export const ContainerMain = styled.div`
         
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 `
-export const ContainerMensage = styled.header`
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--gold);
-    
+export const ContainerMensage = styled.div`
     animation: appearing-from-left 2s normal;
+    h1 {
+        font-size: 6rem;
+        font-weight: 600;
+        color: var(--gold);
+    }
 `
 export const ContainerSignIn = styled.main`
+    min-width: 310px;
     padding: 20px 30px;
     position: relative;
 
