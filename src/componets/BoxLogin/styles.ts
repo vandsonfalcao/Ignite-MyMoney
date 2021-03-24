@@ -70,7 +70,10 @@ export const ContainerSignIn = styled.main`
         border-bottom: 1px solid transparent;
         border-radius: 10px;
         transition: all 0.2s;
-        img {
+        svg {
+            width: 50px;
+            height: 50px;
+            color: var(--title);
             margin-right: 15px;
         }
     }
