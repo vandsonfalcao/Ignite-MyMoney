@@ -7,9 +7,9 @@ export const GlobalStyle = createGlobalStyle`
 
         --red: #e52e4d;
         --green: #33cc95;
-        --blue: #5429cc;
+        --gold: #daa520;
 
-        --blue-light: #6933ff;
+        --gold-light: #ffc600;
 
         --text-title: #363f5f;
         --text-body: #969cb3;
@@ -86,4 +86,25 @@ export const GlobalStyle = createGlobalStyle`
         }
     }
 
+    // ANIMATIONS
+    @keyframes appearing-from-right {
+        0% {
+            transform: translate(5vw,0);
+            opacity: 0;
+        }
+        100% {
+            transform: translate(0,0);
+            opacity: 1;
+        }
+    }
+    @keyframes appearing-from-left {
+        0% {
+            transform: translate(-5vw,0);
+            opacity: 0;
+        }
+        100% {
+            transform: translate(0,0);
+            opacity: 1;
+        }
+    }
 `

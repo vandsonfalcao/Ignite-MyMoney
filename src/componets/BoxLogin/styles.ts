@@ -1,21 +1,46 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
+    display: grid;
+    grid-template-rows: 15vh 75vh;
+    gap: 0;
+    
+    background: var(--background);
+    
+    font-family: 'Poppins', sans-serif;
+`
+export const ContainerHeader = styled.header`
     width: 80vw;
-    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    img {
+        width: 2rem;
+        height: 2rem;
+        margin-right: 0.5rem;
+    }
+    span {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: var(--text-title)
+    }
+`
+export const ContainerMain = styled.div`
+    width: 80vw;
     margin: 0 auto;
 
     display: flex;
     align-items: center;
     justify-content: space-around;
-
-    background: var(--background);
 `
 export const ContainerMensage = styled.header`
     max-width: 50%;
     font-size: 2rem;
     font-weight: 600;
-    color: #daa520;
+    color: var(--gold);
+    
+    animation: appearing-from-left 2s normal;
 `
 export const ContainerSignIn = styled.main`
     max-width: 400px;
@@ -24,7 +49,9 @@ export const ContainerSignIn = styled.main`
 
     background: var(--shape);
     border-radius: 20px;
-    box-shadow: 1px 2px 1px #daa520;
+    box-shadow: 1px 2px 1px var(--gold);
+
+    animation: appearing-from-right 2s normal;
     h2 {
             color: var(--text-title);
         }
@@ -36,13 +63,13 @@ export const ContainerSignIn = styled.main`
 
         border: 0;  
         border-bottom: 1px solid transparent;
-        border-radius: 5px;
+        border-radius: 10px;
         transition: all 0.2s;
         img {
             margin-right: 15px;
         }
     }
     button:hover {
-        border-bottom: 1px solid #daa520;
+        border-bottom: 1px solid var(--gold);
     }
 `
