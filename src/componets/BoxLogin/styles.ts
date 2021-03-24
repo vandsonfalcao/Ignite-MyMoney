@@ -28,22 +28,25 @@ export const ContainerHeader = styled.header`
 `
 export const ContainerMain = styled.div`
     width: 80vw;
+    height: 100%;
     margin: 0 auto;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    div {
+        width: 100%;
+        height: 100%;
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
 `
 export const ContainerMensage = styled.header`
-    max-width: 50%;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 600;
     color: var(--gold);
     
     animation: appearing-from-left 2s normal;
 `
 export const ContainerSignIn = styled.main`
-    max-width: 400px;
     padding: 20px 30px;
     position: relative;
 

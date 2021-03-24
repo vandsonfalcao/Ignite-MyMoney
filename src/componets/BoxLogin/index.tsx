@@ -21,16 +21,18 @@ export function BoxLogin() {
         <span>My money</span>
       </ContainerHeader>
       <ContainerMain>
-        <ContainerMensage>
-          <h1>Sua vida financeira simplificada.</h1>
-        </ContainerMensage>
-        <ContainerSignIn>
-          <h2>Entrar</h2>
-          <button onClick={handleAutentication}>
-            <img src={githubImg} alt="github" />
-            <div>Conecte-se com github</div>
-          </button>
-        </ContainerSignIn>
+        <div className="container-page-login">
+          <ContainerMensage>
+            <h1>Sua vida financeira simplificada.</h1>
+          </ContainerMensage>
+          <ContainerSignIn>
+            <h2>Entrar</h2>
+            <button onClick={handleAutentication}>
+              <img src={githubImg} alt="github" />
+              <div>Conecte-se com github</div>
+            </button>
+          </ContainerSignIn>
+        </div>
       </ContainerMain>
     </Container>
   );
