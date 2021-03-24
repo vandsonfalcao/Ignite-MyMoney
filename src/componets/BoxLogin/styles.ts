@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
     display: grid;
-    grid-template-rows: 15vh 75vh;
+    grid-template-rows: 15vh 70vh;
     gap: 0;
     
     background: var(--background);

@@ -29,7 +29,7 @@ export function BoxLogin() {
             <h2>Entrar</h2>
             <button onClick={handleAutentication}>
               <img src={githubImg} alt="github" />
-              <div>Conecte-se com github</div>
+              <div>Conecte-se com Github</div>
             </button>
           </ContainerSignIn>
         </div>
